@@ -13,7 +13,7 @@ export default class StarSystem extends Component {
       <div id="star-system">
         <div className="container">
           <canvas className="canvas" />
-          <h1 className="first">My name is Jerry Muzsik</h1>
+          <h1 className="first">Jerry Muzsik</h1>
           <h3 className="second">A remote developer</h3>
           <p className="third">Front end, back end, I do it all</p>
           <p className="fourth">Check me out on:</p>
