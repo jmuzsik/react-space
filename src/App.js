@@ -1,11 +1,12 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
+
 import Universe from './Universe/Universe';
 import StarSystem from './StarSystem/StarSystem';
-
-import './App.css';
 import Explosion from './Explosion/Explosion';
 import Star from './Star/Star';
+
+import './App.css';
 
 const App = () => {
   return (

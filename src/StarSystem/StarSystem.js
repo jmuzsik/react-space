@@ -11,7 +11,19 @@ export default class StarSystem extends Component {
   render() {
     return (
       <div id="star-system">
-        <canvas className="canvas" />
+        <div className="container">
+          <canvas className="canvas" />
+          <h1 className="first">My name is Jerry Muzsik</h1>
+          <h3 className="second">A remote developer</h3>
+          <p className="third">Front end, back end, I do it all</p>
+          <p className="fourth">Check me out on:</p>
+          <a className="fifth" href="https://github.com/jmuzsik">
+            GitHub
+          </a>
+          <p className="sixth">I write a lot of code</p>
+          <p className="seventh">Everything else is extra.</p>
+          <p className="eighth">Godspeed</p>
+        </div>
       </div>
     );
   }

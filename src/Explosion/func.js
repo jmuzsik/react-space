@@ -5,17 +5,11 @@ export default () => {
   let sparks = [];
   let blown = [];
   let s_group = new THREE.Group();
-  let nuked = false;
   let scene = new THREE.Scene();
-  let camera = new THREE.PerspectiveCamera(
-    75,
-    window.innerWidth / window.innerHeight,
-    1,
-    8000
-  );
+  let camera = new THREE.PerspectiveCamera();
   camera.position.z = 400;
   let renderer = new THREE.WebGLRenderer({ antialias: true });
-  renderer.setSize(window.innerWidth, window.innerHeight);
+  renderer.setSize(window.outerWidth, window.outerHeight);
   renderer.setPixelRatio(window.devicePixelRatio);
   // renderer.setClearColor(0x0a0026);
   document.body.append(renderer.domElement);
@@ -54,14 +48,12 @@ export default () => {
         .to(blown[i], 100000)
         .easing(TWEEN.Easing.Exponential.Out)
         .onComplete(() => {
-          nuked = true;
         });
       tween.start();
     }
   }
 
   function animate() {
-    camera.position.z -= 0.04;
     TWEEN.update();
     renderer.render(scene, camera);
     requestAnimationFrame(animate);
