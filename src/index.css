@@ -16,6 +16,16 @@ h3 {
   line-height: 23px;
   letter-spacing: 0.05rem;
 }
+h2 {
+  font-family: Monoton;
+  font-size: 17px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: 0.05rem;
+  display: none;
+}
 p {
   font-family: Monoton;
   font-size: 14px;
@@ -48,6 +58,7 @@ a {
 .container h1,
 .container p,
 .container h3,
+.container h2,
 .container a {
   position: absolute;
   color: white;
@@ -81,6 +92,9 @@ a {
   h1 {
     font-size: 1.8rem;
   }
+  h2 {
+    font-size: 1.3rem;
+  }
   h3 {
     font-size: 1.3rem;
   }
@@ -94,6 +108,9 @@ a {
 @media all and (min-width: 660px) {
   h1 {
     font-size: 2.2rem;
+  }
+  h2 {
+    font-size: 1.3rem;
   }
   h3 {
     font-size: 1.7rem;
@@ -109,6 +126,9 @@ a {
   h1 {
     font-size: 2.6rem;
   }
+  h2 {
+    font-size: 1.3rem;
+  }
   h3 {
     font-size: 2rem;
   }
@@ -120,8 +140,35 @@ a {
   }
 }
 @media all and (min-width: 1025px) {
+  .first {
+    top: 15%;
+  }
+  .second {
+    top: 28%;
+  }
+  .third {
+    top: 35%;
+  }
+  .fourth {
+    top: 45%;
+  }
+  .fifth {
+    top: 50%;
+  }
+  .sixth {
+    top: 55%;
+  }
+  .seventh {
+    top: 60%;
+  }
+  .eighth {
+    top: 70%;
+  }
   h1 {
     font-size: 3.2rem;
+  }
+  h2 {
+    font-size: 1.3rem;
   }
   h3 {
     font-size: 2.3rem;
@@ -134,6 +181,21 @@ a {
   }
 }
 @media all and (min-width: 1400px) {
+  .fourth {
+    top: 47%;
+  }
+  .fifth {
+    top: 52%;
+  }
+  .sixth {
+    top: 57%;
+  }
+  .seventh {
+    top: 62%;
+  }
+  .eighth {
+    top: 75%;
+  }
   h1 {
     font-size: 3.8rem;
   }
@@ -145,5 +207,22 @@ a {
   }
   a {
     font-size: 2.3rem;
+  }
+}
+@media all and (orientation: landscape) {
+  h1 {
+    display: none;
+  }
+  h3 {
+    display: none;
+  }
+  p {
+    display: none;
+  }
+  a {
+    display: none;
+  }
+  h2 {
+    display: block;
   }
 }

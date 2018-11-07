@@ -23,6 +23,7 @@ export default class StarSystem extends Component {
           <p className="sixth">I write a lot of code</p>
           <p className="seventh">Everything else is extra.</p>
           <p className="eighth">Godspeed</p>
+          <h2 className="landscape">Uh oh, thing's broke. Get back to portrait.</h2>
         </div>
       </div>
     );
