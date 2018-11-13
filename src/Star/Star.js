@@ -8,7 +8,7 @@ export default class Star extends Component {
   componentDidMount() {
     setTimeout(() => {
       const location = {
-        pathname: '/explosion',
+        pathname: '/yo',
         state: { fromDashboard: true }
       };
       const prevCanvas = document.querySelector('canvas');
@@ -16,7 +16,7 @@ export default class Star extends Component {
       setTimeout(() => {
         prevCanvas.remove();
       }, 3000);
-    }, 10000);
+    }, 9000);
     createStar();
   }
   render() {

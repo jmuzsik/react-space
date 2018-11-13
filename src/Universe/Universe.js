@@ -9,16 +9,16 @@ export default class Universe extends Component {
     Explosion();
     setTimeout(() => {
       const location = {
-        pathname: '/star',
+        pathname: '/boom',
         state: { fromDashboard: true }
       };
       setTimeout(() => {
         document
           .querySelectorAll('.particule')
           .forEach(particule => particule.remove());
-      }, 25000);
+      }, 15000);
       this.props.history.push(location);
-    }, 2000);
+    }, 5000);
   }
   render() {
     return <div />;

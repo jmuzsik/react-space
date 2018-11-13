@@ -3,18 +3,18 @@ export default () => {
   let ctx = canvas.getContext('2d'),
     w = (canvas.width = window.innerWidth),
     h = (canvas.height = window.innerHeight),
-    hue = 790,
+    hue = 600,
     stars = [],
     count = 0,
-    maxStars = 250;
+    maxStars = 100;
 
   // Thanks @jackrugile for the performance tip! https://codepen.io/jackrugile/pen/BjBGoM
   // Cache gradient
   let canvas2 = document.createElement('canvas'),
     ctx2 = canvas2.getContext('2d');
-  canvas2.width = 100;
-  canvas2.height = 100;
-  var half = canvas2.width / 2,
+  canvas2.width = 200;
+  canvas2.height = 200;
+  var half = canvas2.width / 5,
     gradient2 = ctx2.createRadialGradient(half, half, 0, half, half, half);
   gradient2.addColorStop(0.025, '#fff');
   gradient2.addColorStop(0.1, 'hsl(' + hue + ', 61%, 33%)');
@@ -46,7 +46,7 @@ export default () => {
   function maxOrbit(x, y) {
     var max = Math.max(x, y),
       diameter = Math.round(Math.sqrt(max * max + max * max));
-    return diameter / 100;
+    return diameter / 50;
   }
 
   var Star = function() {
@@ -55,7 +55,7 @@ export default () => {
     this.orbitX = w / 2;
     this.orbitY = h / 2;
     this.timePassed = random(0, maxStars);
-    this.speed = random(this.orbitRadius) / 50000;
+    this.speed = random(this.orbitRadius) / 10000;
     this.alpha = random(2, 10) / 10;
 
     count++;
@@ -76,8 +76,8 @@ export default () => {
     ctx.globalAlpha = this.alpha;
     ctx.drawImage(
       canvas2,
-      x - this.radius / 5,
-      y - this.radius / 2,
+      x - this.radius / 2,
+      y - this.radius / 445,
       this.radius,
       this.radius
     );
@@ -90,7 +90,7 @@ export default () => {
 
   function animation() {
     ctx.globalCompositeOperation = 'source-over';
-    ctx.globalAlpha = 0.8;
+    ctx.globalAlpha = 0.2;
     ctx.fillStyle = 'hsla(' + hue + ', 64%, 6%, 1)';
     // ctx.fillRect(0, 0, w, h);
 
