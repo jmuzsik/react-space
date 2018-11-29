@@ -49,43 +49,39 @@ a {
   margin-inline-end: 0px;
 }
 
-.container .typewriter {
+.container .selector {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.container .typewriter h1,
-.container .typewriter p,
-.container .typewriter h3,
-.container .typewriter h2,
-.container .typewriter a {
+.container .selector h1,
+.container .selector p,
+.container .selector h3,
+.container .selector h2,
+.container .selector a {
   position: absolute;
   color: white;
 }
 
-.typewriter .first {
+.container .selector a:hover {
+  color: rgb(18, 105, 211);
+}
+ .selector .first {
   top: 25%;
-}
-.typewriter .second {
+} .selector .second {
   top: 30%;
-}
-.typewriter .third {
+} .selector .third {
   top: 35%;
-}
-.typewriter .fourth {
+} .selector .fourth {
   top: 45%;
-}
-.typewriter .fifth {
+} .selector .fifth {
   top: 50%;
-}
-.typewriter .sixth {
+} .selector .sixth {
   top: 55%;
-}
-.typewriter .seventh {
+} .selector .seventh {
   top: 60%;
-}
-.typewriter .eighth {
+} .selector .eighth {
   top: 70%;
 }
 @media all and (min-width: 480px) {
