@@ -49,43 +49,43 @@ a {
   margin-inline-end: 0px;
 }
 
-.container {
+.container .typewriter {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.container h1,
-.container p,
-.container h3,
-.container h2,
-.container a {
+.container .typewriter h1,
+.container .typewriter p,
+.container .typewriter h3,
+.container .typewriter h2,
+.container .typewriter a {
   position: absolute;
   color: white;
 }
 
-.first {
+.typewriter .first {
   top: 25%;
 }
-.second {
+.typewriter .second {
   top: 30%;
 }
-.third {
+.typewriter .third {
   top: 35%;
 }
-.fourth {
+.typewriter .fourth {
   top: 45%;
 }
-.fifth {
+.typewriter .fifth {
   top: 50%;
 }
-.sixth {
+.typewriter .sixth {
   top: 55%;
 }
-.seventh {
+.typewriter .seventh {
   top: 60%;
 }
-.eighth {
+.typewriter .eighth {
   top: 70%;
 }
 @media all and (min-width: 480px) {
