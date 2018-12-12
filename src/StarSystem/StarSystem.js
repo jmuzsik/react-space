@@ -23,7 +23,7 @@ export default class StarSystem extends Component {
               <span>r</span>
               <span>r</span>
               <span>y</span>
-              <span> </span>
+              <span>&nbsp;&nbsp;</span>
               <span>M</span>
               <span>u</span>
               <span>z</span>
@@ -33,7 +33,7 @@ export default class StarSystem extends Component {
             </h1>
             <h3 className="second animated zoomIn">
               <span>A</span>
-              <span> </span>
+              <span>&nbsp;&nbsp;</span>
               <span>D</span>
               <span>e</span>
               <span>v</span>
@@ -53,11 +53,11 @@ export default class StarSystem extends Component {
               <span />
               <span>m</span>
               <span>e</span>
-              <span> </span>
+              <span>&nbsp;&nbsp;</span>
               <span>o</span>
               <span>u</span>
               <span>t</span>
-              <span> </span>
+              <span>&nbsp;&nbsp;</span>
               <span>o</span>
               <span>n</span>
               <span>:</span>
@@ -80,11 +80,11 @@ export default class StarSystem extends Component {
               <span>n</span>
               <span>k</span>
               <span>s</span>
-              <span> </span>
+              <span>&nbsp;&nbsp;</span>
               <span>f</span>
               <span>o</span>
               <span>r</span>
-              <span> </span>
+              <span>&nbsp;&nbsp;</span>
               <span>s</span>
               <span>t</span>
               <span>o</span>
@@ -93,7 +93,7 @@ export default class StarSystem extends Component {
               <span>i</span>
               <span>n</span>
               <span>g</span>
-              <span> </span>
+              <span>&nbsp;&nbsp;</span>
               <span>b</span>
               <span>y</span>
             </p>

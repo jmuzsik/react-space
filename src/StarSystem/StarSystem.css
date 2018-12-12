@@ -268,3 +268,7 @@ body {
 #star-system:hover .seventh span {
   transition-delay: 0;
 }
+
+#star-system span {
+  letter-spacing: .2rem;
+}
