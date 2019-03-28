@@ -68,9 +68,11 @@ export default class Home extends Component {
       weight: 7,
       rounded: false,
       color: 'white',
-      duration: 0.5,
-      delay: [0, 0.35],
-      easing: window.d3_ease.easeCubicInOut.ease
+      duration: 3,
+      delay: [0, .75],
+      fade: 1,
+      easing: window.d3_ease.easeCubicInOut.ease,
+      individualDelays: false
     };
 
     const nameText = new window.Letters(el, options);
@@ -80,7 +82,7 @@ export default class Home extends Component {
     const aboutMeHover = document.querySelector('.btn-text');
     setTimeout(() => {
       aboutMeHover.style.display = 'flex';
-    }, 4000);
+    }, 10000);
     aboutMeHover.addEventListener('mouseenter', showImage);
     aboutMeHover.addEventListener('mouseleave', hideImage);
   }
