@@ -436,8 +436,8 @@ Letters.prototype = {
         paths: [circleCenter, lineE],
         initial: [{ begin: '-105%', end: '-105%' }, { begin: '5%', end: '5%' }],
         final: [
-          { begin: '50%', end: '125% + 1' },
-          { begin: '5%', end: p50plus23 }
+          { begin: '40%', end: '125% + 1' },
+          { begin: '10%', end: p50plus23 }
         ]
       },
       f: {
@@ -531,7 +531,7 @@ Letters.prototype = {
           { begin: '-25%', end: '25%' },
           { begin: '-25%', end: '25%' },
           { begin: p50minus23, end: p50plus23 },
-          { begin: "49%", end: p50plus23 }
+          { begin: '49%', end: p50plus23 }
         ]
       },
       n: {
@@ -657,7 +657,7 @@ Letters.prototype = {
           { begin: p50minus23, end: p50minus23 }
         ],
         final: [
-          { begin: '85%', end: '50%' },
+          { begin: '85%', end: '48%' },
           { begin: '25% - 1', end: '75%' },
           { begin: '35%', end: p50plus23 }
         ]

@@ -8,11 +8,6 @@ import Home from './Home/Home';
 import './App.css';
 
 class App extends React.Component {
-  componentDidMount() {
-    window.particlesJS.load('particles-js', 'assets/particles.json', function() {
-      console.log('callback - particles.js config loaded');
-    });
-  }
   render() {
     return (
       <Switch>
