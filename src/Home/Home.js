@@ -30,7 +30,7 @@ function showImage() {
       onComplete: function() {
         whiteOverlay.style.transformOrigin = 'left 50% 0px';
         isAnimated = false;
-        imgWrapper.style.visibility = 'visible';
+        // imgWrapper.style.visibility = 'visible';
       }
     }
   );
@@ -54,7 +54,7 @@ function hideImage() {
     onComplete: function() {
       whiteOverlay.style.transformOrigin = 'right';
       isAnimated = false;
-      imgWrapper.style.visibility = 'hidden';
+      // imgWrapper.style.visibility = 'hidden';
     }
   });
 }
