@@ -124,6 +124,9 @@
   position: relative;
   margin: 40px auto 0;
 }
+.space-btn a {
+  color: white !important;
+}
 .space-btn:hover .btn-inner {
   top: -4px;
   transform: scale(1, 1);

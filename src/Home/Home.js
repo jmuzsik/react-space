@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { withRouter } from 'react-router';
 
 import './Home.css';
 
@@ -56,7 +57,7 @@ function hideImage() {
   });
 }
 
-export default class Home extends Component {
+class Home extends Component {
   componentDidMount() {
     window.particlesJS.load('particles-js', '/assets/particles.json');
     const el = document.querySelector('.name-text');
@@ -114,7 +115,7 @@ export default class Home extends Component {
           >
             <div className="btn-wrapper__container">
               <div className="btn-inner">
-                <a className="btn-inner__text" href="#">
+                <a className="btn-inner__text">
                   Story
                 </a>
               </div>
@@ -125,3 +126,5 @@ export default class Home extends Component {
     );
   }
 }
+
+export default withRouter(Home);
