@@ -4,10 +4,6 @@
   justify-content: center;
 }
 
-.container .selector h1,
-.container .selector p,
-.container .selector h3,
-.container .selector h2,
 .container .selector a {
   position: absolute;
   color: white;
@@ -16,158 +12,42 @@
 .container .selector a:hover {
   color: rgb(18, 105, 211);
 }
- .selector .first {
-  top: 25%;
-} .selector .second {
-  top: 30%;
-} .selector .third {
-  top: 35%;
-} .selector .fourth {
-  top: 45%;
-} .selector .fifth {
-  top: 50%;
-} .selector .sixth {
-  top: 55%;
-} .selector .seventh {
-  top: 60%;
-} .selector .eighth {
-  top: 70%;
+.selector .first {
+  top: 33%;
+}
+a {
+  cursor: pointer;
 }
 @media all and (min-width: 480px) {
-  h1 {
-    font-size: 1.8rem;
-  }
-  h2 {
-    font-size: 1.3rem;
-  }
-  h3 {
-    font-size: 1.3rem;
-  }
-  p {
-    font-size: 1rem;
-  }
   a {
-    font-size: 1rem;
+    font-size: 1.8rem;
   }
 }
 @media all and (min-width: 660px) {
-  h1 {
-    font-size: 2.2rem;
-  }
-  h2 {
-    font-size: 1.3rem;
-  }
-  h3 {
-    font-size: 1.7rem;
-  }
-  p {
-    font-size: 1.3rem;
-  }
   a {
-    font-size: 1.3rem;
+    font-size: 2.2rem;
   }
 }
 @media all and (min-width: 839px) {
-  h1 {
-    font-size: 2.6rem;
-  }
-  h2 {
-    font-size: 1.3rem;
-  }
-  h3 {
-    font-size: 2rem;
-  }
-  p {
-    font-size: 1.5rem;
-  }
   a {
-    font-size: 1.5rem;
+    font-size: 2.6rem;
   }
 }
 @media all and (min-width: 1025px) {
   .first {
     top: 15%;
   }
-  .second {
-    top: 28%;
-  }
-  .third {
-    top: 35%;
-  }
-  .fourth {
-    top: 45%;
-  }
-  .fifth {
-    top: 50%;
-  }
-  .sixth {
-    top: 55%;
-  }
-  .seventh {
-    top: 60%;
-  }
-  .eighth {
-    top: 70%;
-  }
-  h1 {
-    font-size: 3.2rem;
-  }
-  h2 {
-    font-size: 1.3rem;
-  }
-  h3 {
-    font-size: 2.3rem;
-  }
-  p {
-    font-size: 1.8rem;
-  }
   a {
-    font-size: 1.8rem;
+    font-size: 3.2rem;
   }
 }
 @media all and (min-width: 1400px) {
-  .fourth {
-    top: 47%;
-  }
-  .fifth {
-    top: 52%;
-  }
-  .sixth {
-    top: 57%;
-  }
-  .seventh {
-    top: 62%;
-  }
-  .eighth {
-    top: 75%;
-  }
-  h1 {
+  a {
     font-size: 3.8rem;
   }
-  h3 {
-    font-size: 2.8rem;
-  }
-  p {
-    font-size: 2.3rem;
-  }
-  a {
-    font-size: 2.3rem;
-  }
 }
-@media all and (orientation: landscape) and (max-width: 660px ) {
-  h1 {
-    display: none;
-  }
-  h3 {
-    display: none;
-  }
-  p {
-    display: none;
-  }
+@media all and (orientation: landscape) and (max-width: 660px) {
   a {
     display: none;
-  }
-  h2 {
-    display: block;
   }
 }

@@ -7,12 +7,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 .overlay {
   position: relative;
   text-align: center;
-  height: 100%;
 }
 .overlay .btn-text {
   display: none;
@@ -118,6 +117,8 @@
   background-color: black;
 }
 .space-btn {
+  display: none;
+  animation: fadeInFromNone 1s ease-out;
   width: 290px;
   height: 110px;
   position: relative;
