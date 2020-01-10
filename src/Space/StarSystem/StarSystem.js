@@ -16,6 +16,19 @@ export default class StarSystem extends Component {
       <div id="star-system">
         <div className="container">
           <canvas className="canvas" />
+          <div className="other-stuff">
+            <p>
+              Hi, i'm Jerry. I was a cook for a while. Then a programmer. Now, I
+              am preparing to do a PhD in physics.
+            </p>
+            <p>May peace be with you,</p>
+            <a
+              className="email"
+              href="mailto:jerrymuzsik@gmail.com?subject=Padawan, I must say something to you."
+            >
+              JJ Muzsik
+            </a>
+          </div>
           <div className="selector">
             <a
               className="first animated zoomIn"
